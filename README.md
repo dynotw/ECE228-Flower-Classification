@@ -6,6 +6,32 @@
   * Linyan Zheng
   * Yening Dong
 
+## SVM Code
+### Firstly you need to install neccessary python packages:
+```
+import glob
+import platform
+import time
+from PIL import Image
+from skimage.feature import hog
+import numpy as np
+import os
+import joblib
+from sklearn.svm import LinearSVC
+import shutil
+import sys
+```
+### Dataset processing
+We copped our image to 128*128 for SVM.
+
+### Model used
+We use HOG algorithm to extract features and SVM for classifying.
+```
+fd = hog(gray, orientations=12,block_norm='L1', pixels_per_cell=[8, 8], cells_per_block=[4, 4], visualize=False,
+                 transform_sqrt=True)
+clf = LinearSVC()
+clf.fit(features, labels)
+```
 ## CNN Code
 ### Firstly you need to install neccessary python packages:
 1. numpy
@@ -20,7 +46,6 @@ For installing these packages, you can use either pip to install packages. For e
 ```
 pip install numpy
 ```
-
 ### Preview Flower Dataset
 This part code is for users to have a brief picture of the dataset
 
