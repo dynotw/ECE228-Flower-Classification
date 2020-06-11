@@ -1,10 +1,18 @@
-# ECE228 - Flower Classification by SVM and CNN
+# Flower Classification by SVM and CNN - ECE228-Machine Learn for Physic Appliction
+This is a coursework project
 
-## Group
+## Team Member
 * Goup5:
   * Junfeng Zhao
   * Linyan Zheng
   * Yening Dong
+
+## Dataset
+The Oxford 102:
+https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html
+
+## Content
+We use SVM and CNN (different VGGs with different learning rates) on this flower classification
 
 ## SVM Code
 ### Firstly you need to install neccessary python packages:
